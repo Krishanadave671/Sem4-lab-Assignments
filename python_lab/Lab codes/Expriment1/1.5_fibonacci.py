@@ -8,4 +8,5 @@ def fib(n) :
 
 
 n = int(input("Which term you want to find of fibonacci series : "))
-print("{}th term in fibonacci sequence is {}".format(n, fib(n)))
+for i in range(n) :
+    print(fib(i + 1), end = " ")
