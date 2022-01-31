@@ -1,4 +1,5 @@
-import  array as arr 
+import  array as arr
+
 def printarr(arr):
     for i in arr :
         print(i, end = " ")
@@ -29,8 +30,7 @@ printarr(reverse_array)
 
 # Get the length in bytes of one array item 
 print('Bytes length : ',end = " ")
-b = bytes(int_array)
-print(len(b))
+print(int_array.itemsize)
 
 # To append items from another array - extend()
 print("Make another array and enter elements by space ")
@@ -49,6 +49,6 @@ printarr(int_array)
 # Insert a specified item at the specified position in the array - Insert()
 x = int(input("Enter the position of an array where you want to insert an element "))
 y = int(input("Enter the element "))
-int_array.insert(x,y)
+int_array.insert(x-1 ,y)
 print("array after Inserting element : ")
 printarr(int_array)
